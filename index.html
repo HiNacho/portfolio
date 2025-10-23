@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    
+
+    <nav id="desktop-nav">
+      
+      <div class="logo"><img
+        src="./asset/ninja.png"
+        alt="Experience icon"
+        class="icon"
+      /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img
+        src="./asset/ninja.png"
+        alt="Experience icon"
+        class="icon"
+      /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./asset/viktor.jpg" alt="John Doe profile picture" class="profile-pic"/>
+      </div>
+      <div class="section__text"> 
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Viktor</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./asset/Victor_Iheanacho_CV.pdf')"
+          >
+            Download CV
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./asset/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/victor-iheanacho-89911b293/'"
+          />
+          <img
+            src="./asset/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/HiNacho'" 
+          />
+        </div>
+      </div>
+    </section>
+    <section id ="about" class = "section"/>
+      <div class="content_sections section-container"> 
+        <div class="section_page">
+            <img src="./asset/about_me.png" alt="">
+        </div>
+        <div class="section_title text-container"> 
+          <span class="spantext">
+            Hello
+          </span>
+          <h2>I am Victor Iheanacho,<span id="text"> a Data Scientist</scan></h2>
+          <p>I’m a Machine Learning and AI Engineer passionate about building intelligent systems that learn, adapt, and drive innovation. With expertise in Python, SQL, and modern AI frameworks, I develop and deploy scalable models that turn complex data into actionable, real-world solutions.
+
+My work spans machine learning engineering, deep learning, and intelligent automation—focused on solving challenging problems across diverse domains. I thrive on designing data-driven systems that power smarter decisions, optimize performance, and push the boundaries of what technology can achieve.
+
+Driven by curiosity and impact, I’m always open to collaborations that apply AI to create meaningful, transformative solutions across industries.
+            
+              <li>
+                  <span>Email :</span>
+                  <p>victoriheanachoc@gmail.com</p>
+              </li>
+              <li>
+                  <span>Phone :</span>
+                  <p>+234 903 739 7084</p>
+              </li>
+          </ul>
+       
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/excel.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Excel</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/dashboard.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/sql-server.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/business-intelligence.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>POWER BI</h3>
+                 
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/artificial-intelligence.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/icons8-pytorch-50.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/NumPy.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NumPy</h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+              
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud Technology & Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/cloud-computing.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/aws.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./asset/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/pexels-cottonbro-7578815.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Medical Data Visualizer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/viktor-nacho/medical_data_visualizer'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                See Article
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/pexels-cedric-fauntleroy-8154798.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Demographic Data Analyzer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/viktor-nacho/DemographicData_Analyzer'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                See Article
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/stock_analysis.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stock Market Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/viktor-nacho/stock_market_analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                See Article
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/housing.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Housing Price Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HiNacho/housing_price_model'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./asset/housing_article.pdf')" 
+              >
+                See Article
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+        
+      </div>
+      <img
+        src="./asset/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./asset/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="victoriheanachoc@gmail.com">victoriheanachoc@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./asset/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/victor-iheanacho-89911b293/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Viktor. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
